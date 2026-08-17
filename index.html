@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Studio Gabriela Castro | Estúdio de estética</title>
+
+    <meta name="description"
+        content="Studio Gabriela Castro - Estúdio de estética com elegância, cuidado e resultados personalizados. Marca já a tua sessão.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+
+            <a href="#inicio" class="logo">
+                Gabriela Castro<span>STUDIO</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="nav">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+
+                <p class="hero-small">BELEZA • ELEGÂNCIA • CONFIANÇA</p>
+
+                <h1>
+                    O teu olhar,<br>
+                    <span>a nossa arte.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Serviços de estética personalizados para realçar
+                    a tua beleza natural.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#servicos" class="btn btn-primary">
+                        Ver serviços
+                    </a>
+
+                    <a href="#contacto" class="btn btn-outline">
+                        Marcar sessão
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SOBRE -->
+        <section class="about section" id="sobre">
+
+            <div class="container about-grid">
+
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="images/profile.jpg" alt="Extensão de pestanas, fios tecnológicos">
+                    </div>
+                </div>
+
+                <div class="about-content">
+
+                    <p class="section-label">SOBRE NÓS</p>
+
+                    <h2>
+                        Beleza nos pequenos
+                        <span>detalhes.</span>
+                    </h2>
+
+                    <p>
+                        No nosso espaço, cada cliente é única. Criamos
+                        looks personalizados de acordo com o formato
+                        dos teus olhos, estilo e personalidade.
+                    </p>
+
+                    <p>
+                        O nosso objetivo é proporcionar não só um resultado
+                        bonito e elegante, mas também uma experiência
+                        relaxante e especial.
+                    </p>
+
+                    <a href="#contacto" class="text-link">
+                        Marca a tua experiência →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section class="services section" id="servicos">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">SERVIÇOS</p>
+
+                    <h2>
+                        Escolhe o teu
+                        <span>look.</span>
+                    </h2>
+
+                    <p>
+                        Técnicas profissionais para um resultado elegante
+                        e adaptado a cada cliente.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+
+                        <div class="service-number">01</div>
+
+                        <h3>Limpeza facial</h3>
+
+                        <p>
+                            Cuidado especializado para uma pele saudável, radiante e perfeitamente equilibrada.
+                        </p>
+
+                        <div class="price">
+                            35€
+                        </div>
+
+                        <button class="service-btn"
+                            onclick="openBooking('Limpeza facial')">
+                            Marcar
+                        </button>
+
+                    </article>
+
+                    <article class="service-card featured">
+
+                        <div class="popular">
+                            MAIS PEDIDO
+                        </div>
+
+                        <div class="service-number">02</div>
+
+                        <h3>Depilação a laser</h3>
+
+                        <p>
+                            A depilação a laser é um tratamento progressivo que elimina os pelos através de feixes de luz que destroem a raiz.
+                        </p>
+
+                        <div class="price">
+                            50€
+                        </div>
+
+                        <button class="service-btn"
+                            onclick="openBooking('Depilação a laser')">
+                            Marcar
+                        </button>
+
+                    </article>
+
+                    <article class="service-card">
+
+                        <div class="service-number">03</div>
+
+                        <h3>Design de sobrancelhas</h3>
+
+                        <p>
+                            Sobrancelhas que destacam o teu olhar, desenhadas com toda a precisão.
+                            (Design com henna)
+                        </p>
+
+                        <div class="price">
+                            15€
+                        </div>
+
+                        <button class="service-btn"
+                            onclick="openBooking('Design de sobrancelhas')">
+                            Marcar
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- GALERIA -->
+        <section class="gallery section" id="galeria">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">PORTFÓLIO</p>
+
+                    <h2>
+                        Os nossos
+                        <span>trabalhos.</span>
+                    </h2>
+                </div>
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-item">
+                        <img src="images/lash1.jpg" alt="Trabalho de lashes">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/lash2.jpg" alt="Extensão de pestanas">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/Sobrancelhas.jpg" alt="Volume de pestanas">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/Limpeza facial.jpg" alt="Lashes profissionais">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/Laser.jpg" alt="Resultado de lashes">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/Lash4.jpg" alt="Pestanas perfeitas">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- TESTEMUNHOS -->
+        <section class="testimonials section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">CLIENTES</p>
+
+                    <h2>
+                        Elas dizem
+                        <span>por nós.</span>
+                    </h2>
+                </div>
+
+                <div class="testimonial-grid">
+
+                    <article class="testimonial">
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            “Sem dúvida a melhor das melhores, nasceste para isto. Já fiz laser e logo na primeira sessão notei diferença ”
+                        </p>
+
+                        <strong>— Carla @instagram</strong>
+                    </article>
+
+                    <article class="testimonial">
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            “Amei minhas sobrancelhas! Feitas com cuidado e dedicação”
+                        </p>
+
+                        <strong>— Mikaela @instagram</strong>
+                    </article>
+
+                    <article class="testimonial">
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            “Simplesmente única, para além de ser muito boa no que faz, o profissionalismo, o atendimento, é perfeitooo”
+                        </p>
+
+                        <strong>— Tatiana @instagram</strong>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+
+            <div class="container cta-content">
+
+                <p class="section-label">PRONTA PARA UM NOVO OLHAR?</p>
+
+                <h2>
+                    O teu próximo
+                    <span>look começa aqui.</span>
+                </h2>
+
+                <a href="#" class="btn btn-primary"
+                    onclick="openBooking('Marcação geral')">
+                    Marcar sessão
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="contact section" id="contacto">
+
+            <div class="container contact-grid">
+
+                <div>
+
+                    <p class="section-label">CONTACTO</p>
+
+                    <h2>
+                        Vamos criar o teu
+                        <span>look perfeito.</span>
+                    </h2>
+
+                    <p class="contact-description">
+                        Entra em contacto connosco para esclarecer
+                        dúvidas ou marcar a tua próxima sessão.
+                    </p>
+
+                </div>
+
+                <div class="contact-info">
+
+                    <a href="https://wa.me/351917532503"
+                        class="contact-item"
+                        target="_blank">
+
+                        <div class="contact-icon">WA</div>
+
+                        <div>
+                            <small>WHATSAPP</small>
+                            <strong>+351 917 532 503</strong>
+                        </div>
+
+                    </a>
+
+                    <a href="https://instagram.com/_studiogabrielacastro"
+                        class="contact-item"
+                        target="_blank">
+
+                        <div class="contact-icon">IG</div>
+
+                        <div>
+                            <small>INSTAGRAM</small>
+                            <strong>@_studiogabrielacastro</strong>
+                        </div>
+
+                    </a>
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">⌖</div>
+
+                        <div>
+                            <small>LOCALIZAÇÃO</small>
+                            <strong>Vila Nova de Gaia, Portugal</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <div class="logo">
+                LASHES<span>STUDIO</span>
+            </div>
+
+            <p>
+                © 2026 Lashes Studio. Todos os direitos reservados.
+            </p>
+
+            <a href="#inicio">
+                Voltar ao topo ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+    <!-- MODAL DE MARCAÇÃO -->
+    <div class="modal" id="bookingModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" onclick="closeBooking()">
+                ×
+            </button>
+
+            <p class="section-label">MARCAÇÃO</p>
+
+            <h2>
+                Marca a tua
+                <span>sessão.</span>
+            </h2>
+
+            <p id="selectedService">
+                Escolhe o teu serviço.
+            </p>
+
+            <form id="bookingForm">
+
+                <input
+                    type="text"
+                    id="clientName"
+                    placeholder="O teu nome"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    id="clientPhone"
+                    placeholder="O teu número"
+                    required
+                >
+
+                <input
+                    type="date"
+                    id="bookingDate"
+                    required
+                >
+
+                <textarea
+                    id="clientMessage"
+                    placeholder="Mensagem (opcional)"
+                    rows="4">
+                </textarea>
+
+                <button type="submit" class="btn btn-primary">
+                    Enviar pelo WhatsApp
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
